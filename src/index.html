@@ -22,6 +22,9 @@
         );
       };
       const container = document.getElementById("root");
+      //before it looked like this 👇🏼
+      //ReactDOM.render(container, <App />);
+      //we use this 👇🏼 in v18 as concurrency was introduced
       const root = ReactDOM.createRoot(container);
       root.render(React.createElement(App)); // this is the trick of react, when you give text, it creates a tag, but with component(function which creates element) it renders that out. Basically you are never gonna use this directly as JSX does this for you.
     </script>
