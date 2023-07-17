@@ -12,17 +12,18 @@ const App = () => {
     React.createElement(Pet, {
       name: "koibhi_1",
       animal: "dog",
-      breed: "local"
+      breed: "local",
     }),
     React.createElement(Pet, {
       name: "koibhi_2",
       animal: "dog_1",
-      breed: "sehar_ka"
+
+      breed: "sehar_ka",
     }),
     React.createElement(Pet, {
       name: "koibhi_3",
       animal: "dog_2",
-      breed: "bazaar_ka"
+      breed: "bazaar_ka",
     }),
   ]);
 };
