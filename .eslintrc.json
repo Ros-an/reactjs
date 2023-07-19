@@ -1,0 +1,25 @@
+{
+    "extends":["eslint:recommended", "prettier"],
+    "plugins":[],
+    "parserOptions": {
+        "ecmaVersion": "latest", //latest version of javascript, like async await, etc
+        "sourceType": "module", // import export 
+        "ecmaFeatures": {
+            "jsx": true // consider jsx
+        }
+    },
+    "env": {
+        "es6": true, 
+        "browser": true,
+        "node": true // if fetch used consider that, like node related thing
+    }
+}
+
+// at extends property, prettier will always be at last
+// what does each property mean here, for that do a search
+// install eslint extension
+// you can already see error at App.jsx
+// "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\" --quiet", --quiet means only when there is error
+// npm run lint --debug (means you are passing debug to npm)
+// npm run lint -- --debug (means you are passing debug to lint, it logs the entire step how it finds error, useful for someone having an issue)
+// npm run lint -- --fix (to fix things by eslint)
